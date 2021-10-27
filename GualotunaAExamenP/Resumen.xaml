@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GualotunaAExamenP.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Resumen de Pagos" />
+
+            <Label x:Name="lblusuario"/>
+            <Label x:Name="lblnombre"/>
+            <Label x:Name="lbltotal"/>
+
+            <Label Text="RESUMEN"/>
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                
+                <Label Text="Su nombre es: " Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtnombre" Grid.Row="1" Grid.Column="1" IsEnabled="False"/>
+
+                <Label Text="Cuota a cancelar mensualmente" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txttotal"  Grid.Row="2" Grid.Column="1" IsEnabled="False"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
